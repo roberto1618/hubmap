@@ -1,0 +1,9 @@
+attrs
+jinja2
+pytz
+PyYAML
+ipython
+transformers
+sympy
+tensorflow
+opencv-python
