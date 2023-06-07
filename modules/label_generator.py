@@ -14,7 +14,7 @@ def mask_generator(img_polygons):
     for coord in coordinates_vessel:
         mask[coord[1], coord[0]] = 1
     
-    mask = mask.astype(np.uint8) * 255
+    mask = mask.astype(np.uint8)# * 255
         
     return mask
 
@@ -24,7 +24,6 @@ if not os.path.exists(folder):
 
 with open('./data/polygons.jsonl', 'r') as f:
     polygons = [json.loads(line) for line in f]
-
 
 for i,p in enumerate(polygons):
     img_name = p['id']
